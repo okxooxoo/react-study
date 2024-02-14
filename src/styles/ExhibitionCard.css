@@ -1,0 +1,78 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 4px;
+}
+
+.card-info {
+    display: flex;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+}
+
+.details-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+.place {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: 600;
+    color: #FF4800;
+}
+
+.period {
+    font-size: 8px;
+    font-weight: 400;
+    color: #3F3F3F;
+}
+
+.card-btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+}
+
+.reserve-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1A1A1A;
+    height: 16px;
+    width: 40px;
+    border-radius: 4px;
+    font-size: 8px;
+}

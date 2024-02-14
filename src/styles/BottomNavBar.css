@@ -1,0 +1,27 @@
+.nav-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 0.5px #F4F4F4;
+}
+
+.nav-bar-tap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tap-icon {
+    padding-bottom: 4px;
+}
+
+.tap-text {
+    font-size: 12px;
+    color: #1A1A1A;
+}
