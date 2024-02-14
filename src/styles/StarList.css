@@ -1,0 +1,17 @@
+.msg-container {
+    display: flex;
+    height: calc(100vh - 84px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msg-top {
+    color: #1A1A1A;
+    font-size: 16px;
+}
+
+.msg-bottom {
+    color: #AAAAAA;
+    font-size: 16px;
+}

@@ -3,7 +3,7 @@
     position: fixed;
     bottom: 0;
     height: 80px;
-    width: 100%;
+    width: 100vw;
     background-color: white;
     flex-direction: row;
     justify-content: space-around;
@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .tap-icon {

@@ -21,6 +21,7 @@ function Home() {
       <div className='body'>
         {datas.map((data) => (
           <ExhibitionCard
+            id={data.id}
             image={data.image}
             title={data.title}
             place={data.place}
