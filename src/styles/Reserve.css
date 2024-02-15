@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 64px;
+    border-bottom: solid 1px #F4F4F4;
+}
+
+.back-icon {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.header-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.big-image {
+    width: 100%;
+}
+
+.big-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    height: 130px;
+}
+
+.big-details-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.big-details-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.big-details-bottom-left {
+    text-align: left;
+}
+
+.big-title {
+    color: #1A1A1A;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.big-price {
+    color: #EA3800;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.big-place {
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.big-period {
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.big-reserve-btn {
+    background-color: #FFBF66;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 12px;
+    margin-top: 20px;
+    border-radius: 4px;
+}

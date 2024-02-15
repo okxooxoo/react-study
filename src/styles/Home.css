@@ -1,6 +1,7 @@
 .body {
     display: flex;
     flex-direction: column;
+    min-width: 390px;
     padding: 4px;
     padding-bottom: 80px;
 }

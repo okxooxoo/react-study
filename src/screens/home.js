@@ -29,8 +29,8 @@ function Home() {
             period={data.period}
           />
         ))}
+        <BottomNavBar />
       </div>
-      <BottomNavBar />
     </div>
   );
 }
