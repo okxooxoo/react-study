@@ -23,5 +23,9 @@
 
 .tap-text {
     font-size: 12px;
+    color: #AAAAAA;
+}
+
+.nav-bar-tap.active .tap-text {
     color: #1A1A1A;
 }
