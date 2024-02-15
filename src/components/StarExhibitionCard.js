@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { pop } from '../store';
 import '../styles/ExhibitionCard.css';
 
 const StarExhibitionCard = ({id, image, title, place, price, period}) => {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const unstar = () => {
         dispatch(pop(id));
@@ -23,9 +24,9 @@ const StarExhibitionCard = ({id, image, title, place, price, period}) => {
                         <div className='price'>{price.toLocaleString('ko-KR')} 원</div>
                     </div>
                     <div className='details-bottom'>
-                        <Link to={`/reserve/${id}`} className='reserve-btn'>
+                        <div onClick={() => navigate(`/reserve/${id}`)} className='reserve-btn'>
                             예매하기
-                        </Link>
+                        </div>
                     </div>
                 </div>
             </div>

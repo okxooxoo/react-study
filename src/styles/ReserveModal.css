@@ -1,0 +1,40 @@
+.modal-container  {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.modal-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 250px;
+}
+
+.modal-text {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px;
+}
+
+.confirm-btn {
+    color: white;
+    background-color: #FFBF66;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.cancel-btn {
+    color: white;
+    background-color: #D9D9D9;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
