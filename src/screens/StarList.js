@@ -28,7 +28,7 @@ function StarList() {
       ) : (
         <div className='star-list-container'>
           {datas
-            .filter((data) => starDatas.includes(data.id))
+            .filter((data) => starDatas.includes(data.id)) // 찜한 전시회 카드만 보여줌
             .map((data) => (
               <StarExhibitionCard
                 id={data.id}

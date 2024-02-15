@@ -13,6 +13,17 @@ function Reserve() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const fetchDatas = async () => {
+      const datas = await getDatas();
+      const selectedData = datas.find((data) => data.id === Number(id));
+      setData(selectedData);
+    };
+
+    fetchDatas();
+  }, [id]);
+
+  // 모달을 열고 닫는 함수들
   const openReserveModal = () => {
     setReserveModalOpen(true);
   };
@@ -31,16 +42,6 @@ function Reserve() {
     navigate('/');
   };
 
-  useEffect(() => {
-    const fetchDatas = async () => {
-      const datas = await getDatas();
-      const selectedData = datas.find((data) => data.id === Number(id));
-      setData(selectedData);
-    };
-
-    fetchDatas();
-  }, [id]);
-
   return (
     <div className='reserve-container'>
       <div className='header'>
@@ -51,6 +52,7 @@ function Reserve() {
           예매하기
         </div>
       </div>
+
       {data && (
         <BigExhibitionCard
           id={data.id}
@@ -61,6 +63,7 @@ function Reserve() {
           period={data.period}
         />
       )}
+      
       {/* 예매하기 버튼 */}
       <div onClick={openReserveModal} className='big-reserve-btn'>
         예매하기

@@ -7,6 +7,7 @@ import '../styles/ExhibitionCard.css';
 const StarExhibitionCard = ({id, image, title, place, price, period}) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    
     const unstar = () => {
         dispatch(pop(id));
     };

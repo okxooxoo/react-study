@@ -1,5 +1,6 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
+// 찜한 전시회 데이터의 id를 저장하는 배열
 const starDatas = createSlice({
 	name: 'starDatas',
 	initialState: [],

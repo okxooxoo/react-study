@@ -25,6 +25,7 @@ function Home() {
             image={data.image}
             title={data.title}
             place={data.place}
+            placeName={data.placeName}
             price={data.price}
             period={data.period}
           />

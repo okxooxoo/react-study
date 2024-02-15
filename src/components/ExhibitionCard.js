@@ -4,10 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { push, pop } from '../store';
 import '../styles/ExhibitionCard.css';
 
-const ExhibitionCard = ({id, image, title, place, price, period}) => {
+const ExhibitionCard = ({id, image, title, place, placeName, price, period}) => {
     const starDatas = useSelector((state) => state.starDatas);
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    
     const star = () => {
         dispatch(push(id));
     };
@@ -24,7 +25,7 @@ const ExhibitionCard = ({id, image, title, place, price, period}) => {
                 <div className='card-details'>
                     <div className='details-top'>
                         <div className='title'>{title}</div>
-                        <div className='place'>{place}</div>
+                        <div className='place'>{place}( {placeName} )</div>
                         <div className='price'>{price.toLocaleString('ko-KR')} 원</div>
                     </div>
                     <div className='details-bottom'>

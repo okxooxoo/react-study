@@ -1,6 +1,6 @@
 .msg-container {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 84px);
     justify-content: center;
     align-items: center;
     flex-direction: column;
